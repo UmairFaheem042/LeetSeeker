@@ -50,7 +50,7 @@ const HistoryCard = ({ history }) => {
               </span>
             </p>
           ))}
-        {submissions.length === 0 && <p className="notFound">🚫 No Recent Submissions</p>}
+        {/* {!submissions && <p className="notFound">🚫 No Recent Submissions</p>} */}
       </div>
     </div>
   );
