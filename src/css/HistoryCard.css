@@ -1,0 +1,46 @@
+.historyCard {
+  width: 100%;
+}
+
+.historyCard h4 {
+  color: #aeaeae;
+  font-weight: 600;
+}
+
+.historyCard .questions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* font-size: 0.9rem; */
+  /* font-weight: 400; */
+}
+
+.questions .question {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+}
+
+.questions .question span.time {
+  color: #aeaeae;
+  font-weight: 400;
+}
+
+.notFound{
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #aeaeae;
+}
+
+@media (max-width: 670px){
+  .questions .question{
+    font-size: 0.85rem;
+  }
+  .questions .question span.time {
+    display: none;
+  }
+}
