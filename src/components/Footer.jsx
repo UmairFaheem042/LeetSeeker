@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <nav className="maxWidth">
         <div>
-          Copyright &copy; 2021 <span className="name">Umair Faheem</span>
+          Copyright &copy; <span className="name">Umair Faheem</span>
         </div>
         <div className="socials">
           <a href="https://github.com/UmairFaheem042" target="_blank">
