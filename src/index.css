@@ -180,7 +180,7 @@ footer .socials a:hover {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:638px){
   header nav{
     /* flex-direction: column; */
     padding: 1rem;
@@ -193,6 +193,8 @@ footer .socials a:hover {
 
   .searchContainer input{
     width: 100%;
+    min-width: 210px;
+    /* width: 200px; */
   }
 
   .searchContainer button{
