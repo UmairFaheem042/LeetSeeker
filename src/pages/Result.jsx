@@ -10,9 +10,9 @@ import { TailSpin } from "react-loader-spinner";
 const Result = () => {
   window.scrollTo(0, 0);
   const { username } = useParams();
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(true);
   const [userInfo, setUserInfo] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -23,8 +23,11 @@ const Result = () => {
         );
         const data = await res.json();
         if (data.errors) {
+          setTimeout(() => {
+            setLoading(false);
+          }, 500);
           setError(true);
-          setLoading(false);
+          // setLoading(false);
           return;
         }
         setUserInfo(data);

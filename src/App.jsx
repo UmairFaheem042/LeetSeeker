@@ -16,8 +16,8 @@ const App = () => {
           <Route path="/:username" element={<Result />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };
